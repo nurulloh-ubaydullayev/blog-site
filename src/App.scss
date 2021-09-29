@@ -8,6 +8,8 @@
 //   width: 1px;
 // }
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800;900&display=swap");
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -39,7 +41,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 #root {

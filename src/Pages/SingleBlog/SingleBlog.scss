@@ -1,0 +1,349 @@
+.single-blog {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1522px;
+  padding: 0 20px;
+  padding-top: 180px;
+  padding-bottom: 250px;
+}
+
+.single-blog__top {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.history-back {
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #000000;
+}
+
+.post {
+  width: 100%;
+  max-width: 911px;
+  margin: 0 auto;
+  margin-bottom: 156px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.post__heading {
+  margin-bottom: 40px;
+  font-family: "Garamond";
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.hashtag {
+  margin-bottom: 60px;
+  font-family: "Cera Pro", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.post__text {
+  margin-bottom: 80px;
+  font-family: "Cera Pro", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.post__blockquote {
+  margin-bottom: 80px;
+  padding: 30px 50px;
+  font-family: "Garamond", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  background: #f4f4f4;
+  color: #000000;
+}
+
+.post__text-pad {
+  margin-bottom: 70px;
+}
+
+.post__img {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.post__img-mb {
+  margin-bottom: 20px;
+}
+
+.post__img-alt {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 58px;
+  font-family: "Garamond";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  text-decoration-line: underline;
+  color: #0066ff;
+}
+
+.post__mini-title {
+  margin-bottom: 20px;
+  font-family: "Cera Pro", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.about-bloger {
+  width: 100%;
+  max-width: 278px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.post__avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.post__owner-name {
+  font-family: "Cera Pro", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.post__date {
+  font-family: "Cera Pro";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.share {
+  width: 100%;
+  max-width: 878px;
+  padding: 30px 50px;
+  background: #f4f4f4;
+}
+
+.share__heading {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Garamond", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.share__links-list {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.share__link {
+  margin: 0 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-family: "Cera Pro", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  text-decoration: none;
+}
+
+.telegram {
+  margin-left: 0;
+  padding: 16px 56px 16px 57px;
+}
+
+.instagram {
+  padding: 16px 54px;
+}
+
+.facebook {
+  padding: 16px 55px 16px 56px;
+}
+
+.twitter {
+  margin-right: 0;
+  padding: 16px 64px;
+}
+
+.telegram:hover {
+  border: 1px solid rgba(41, 182, 246, 0.5);
+  color: #29b6f6;
+  transition: 0.2s;
+}
+
+.instagram:hover {
+  border: 1px solid #eb4968;
+  color: #eb4968;
+  transition: 0.2s;
+}
+
+.facebook:hover {
+  border: 1px solid rgba(6, 128, 221, 0.5);
+  color: #0680dd;
+  transition: 0.2s;
+}
+
+.twitter:hover {
+  border: 1px solid rgba(3, 170, 244, 0.5);
+  color: #03aaf4;
+  transition: 0.2s;
+}
+
+.loader {
+  //   position: absolute;
+  //   top: -90px;
+  //   right: 12px;
+  border: 30px solid #f7f7f7;
+  border-top: 30px solid #000;
+  border-radius: 50%;
+  width: 122px;
+  height: 122px;
+
+  animation: spin 1s cubic-bezier(0, 0, 1, 1) infinite;
+
+  &:hover {
+    animation-duration: 0.5s;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 909px) {
+  .telegram {
+    margin-left: 15px;
+  }
+
+  .twitter {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .single-blog__top {
+    display: none;
+  }
+
+  .post__heading {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .hashtag {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .post__text {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .post__blockquote {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .post__mini-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .post__owner-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .post__date {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .share__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 541px) {
+  .container {
+    padding: 0 15px;
+    padding-top: 180px;
+  }
+
+  .telegram {
+    padding: 16px 43px 16px 43px;
+  }
+
+  .instagram {
+    padding: 16px 41px 16px 40px;
+  }
+
+  .facebook {
+    padding: 16px 42px 16px 42px;
+  }
+
+  .twitter {
+    padding: 16px 51px 16px 51px;
+  }
+
+  .share {
+    padding: 30px 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+}
