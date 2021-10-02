@@ -1,0 +1,123 @@
+.works_section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 878px;
+  height: 520px;
+  background-color: #455a6f;
+}
+
+.my-works .container {
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 140px;
+}
+
+.bg1 {
+  width: 100%;
+  max-width: 698px;
+}
+
+.bg2 {
+  width: 100%;
+  max-width: 265px;
+}
+
+.mobil {
+  display: none;
+}
+
+.works_section_dream {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 878px;
+  height: 520px;
+  margin-bottom: 100px;
+  background-color: #ffe6d3;
+}
+
+.my-works_box {
+  width: 100%;
+  max-width: 878px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.digitalstar:hover {
+  text-decoration: none;
+}
+
+.digitalstar {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  margin-bottom: 50px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.digitalstar:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+
+.digitalstar:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.my-works_box:nth-child(2n) .works_section {
+  background-color: #ffe6d3;
+}
+
+.my-works_box:nth-child(2n-1) .works_section_dream {
+  background-color: #7595b5;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobil {
+    display: block;
+  }
+  .laptop {
+    display: none;
+  }
+  .my-works_box {
+    width: 100%;
+    max-width: 395px;
+  }
+  .works_section {
+    width: 100%;
+    max-width: 395px;
+    height: 345px;
+    margin-bottom: 90px;
+    background-color: #7595b5;
+  }
+  .works_section_dream {
+    width: 100%;
+    max-width: 395px;
+    height: 345px;
+    margin-bottom: 90px;
+    background-color: #ffe6d3;
+  }
+  .digitalstar {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}

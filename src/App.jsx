@@ -9,10 +9,15 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import Blog from "./Pages/Blog/Blog";
 import SingleBlog from "./Pages/SingleBlog/SingleBlog";
 import Contact from "./Pages/Contact/Contact";
+import Navbar from "./Components/Navbar/Navbar";
+
+// Components
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
+
       <Switch>
         <Route path="/" component={About} exact />
         <Route path="/portfolio" component={Portfolio} exact />

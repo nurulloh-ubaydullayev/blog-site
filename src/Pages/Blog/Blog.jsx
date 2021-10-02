@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import Blogst from "../../Assets/Images/post-img.png";
 import Blognd from "../../Assets/Images/post-img2.png";
 
+// Components
+import Footer from "../../Components/Footer/Footer";
+import BlogHeader from "../../Components/BlogHeader/BlogHeader";
+
 function Blog() {
   const data = [
     {
@@ -49,7 +53,8 @@ function Blog() {
   ];
 
   return (
-    <>
+    <div className="blogs">
+      <Footer />
       <div className="blog-section">
         <div className="blog__content">
           <div className="blog__left-box">
@@ -81,7 +86,8 @@ function Blog() {
           </div>
         </div>
       </div>
-    </>
+      <BlogHeader />
+    </div>
   );
 }
 

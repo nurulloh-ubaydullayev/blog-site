@@ -1,0 +1,215 @@
+.najotContainer {
+  display: flex;
+  margin-bottom: 100px;
+  background-color: #000000;
+  width: 100%;
+  height: 937px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.najotTalimLeftSiteWrapper {
+  width: 473px;
+}
+.najotTalim2021 {
+  display: flex;
+  justify-content: space-between;
+}
+.najotTalim2021Title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 78px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Garamond, sans-serif;
+}
+.najotTalim2021SubTitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  font-family: Garamond, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.najotTalim2021P {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: 213px;
+  margin-bottom: 52px;
+}
+.najotTalim2021Link {
+  font-family: "Cera Pro", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+.najotTalimImgWrapper {
+  position: relative;
+}
+.najotTalimMainLogo {
+  position: absolute;
+  top: 110px;
+  left: 45px;
+}
+.najotTalim2020 {
+  display: flex;
+  margin-top: 70px;
+}
+.najotTalim2020Right {
+  margin-left: 40px;
+}
+.najotTalimComHr {
+  opacity: 0.3;
+  height: 657px;
+  margin-right: 57px;
+  margin-left: 100px;
+}
+.najotTalimRightSite {
+  width: 330px;
+  height: 573px;
+}
+.najotTalimRightSiteTitle {
+  font-family: Garamond, sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 48px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.najotTalimRightSiteP {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+.downloadFile {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  width: 298px;
+  height: 52px;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+.downloadIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  margin-left: 22px;
+}
+.downloadFileName {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 36px;
+}
+.downloadFileType {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  height: 52px;
+  width: 102px;
+  background-color: white;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .najotContainer {
+    flex-direction: column;
+    height: 1300px;
+  }
+  .najotTalimLeftSiteWrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .najotTalimComHr {
+    transform: rotate(90deg);
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .najotTalimRightSite {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .najotContainer {
+    flex-direction: column-reverse;
+  }
+  .najotTalimRightSite {
+    margin-top: 70px;
+  }
+  .najotTalimLeftSiteWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .najotTalim2021,
+  .najotTalim2020 {
+    width: 328px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .najotTalim2020 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .najotTalim2021left,
+  .najotTalim2020Right {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .najotTalim2021left {
+    width: 160px;
+  }
+  .najotTalim2021Title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .najotTalim2021SubTitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .najotTalim2021P,
+  .najotTalim2021Link {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .najotTalim2021P {
+    display: inline;
+  }
+  .najotTalim2021Link {
+    display: block;
+    margin-top: 28px;
+  }
+  .creator {
+    width: 150px;
+    height: 207px;
+    margin-right: 20px;
+  }
+  .najotTalimImgWrapper {
+    position: relative;
+    width: 150px;
+    height: 207;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .najotTalimLogo {
+    width: 160px;
+    height: 230px;
+  }
+  .najotTalimMainLogo {
+    width: 77px;
+    height: 54px;
+    top: 90px;
+    left: 37px;
+  }
+}

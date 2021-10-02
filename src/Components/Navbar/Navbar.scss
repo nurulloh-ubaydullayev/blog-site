@@ -1,0 +1,90 @@
+.mainNavBarWrapper {
+  position: fixed;
+  z-index: 444;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 1140px;
+  background-color: black;
+  margin-right: auto;
+  margin-left: auto;
+  transition: bottom 1s;
+}
+.navBarWrapper {
+  display: flex;
+  height: 109px;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navBarItem {
+  list-style-type: none;
+}
+.navBarNavLink {
+  color: white;
+  text-decoration: none;
+  font-family: "Cera Pro", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 57px;
+}
+.mainNavBarWrapper2 {
+  display: none;
+}
+@media only screen and (max-width: 1140px) {
+  .mainNavBarWrapper {
+    width: 100%;
+  }
+  .navBarNavLink {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 47px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .navBarWrapper {
+    height: 80px;
+  }
+  .navBarNavLink {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mainNavBarWrapper {
+    display: none;
+  }
+  .mainNavBarWrapper2 {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .menuWrapper {
+    height: 50px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    border: none;
+  }
+  .navBarWrapper2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+  }
+}
