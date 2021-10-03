@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import "./najotTalim.scss";
 import najotTalimLogo from "../../Assets/Images/najotTalimLogo.png";
 import najotTalimMainLogo from "../../Assets/Images/najotTalimMainLogo.png";

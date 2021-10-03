@@ -8,6 +8,7 @@ import NajotTalim from "../../Components/najotTalim/najotTalim";
 import MyWorks from "../../Components/MyWorks/MyWorks";
 import PortHeader from "../../Components/PortHeader/PortHeader";
 import Footer from "../../Components/Footer/Footer";
+import TelegramLink from "../../Components/TelegramLink/TelegramLink";
 
 function About() {
   return (
@@ -15,6 +16,7 @@ function About() {
       <Footer />
       <BlogIntro />
       <NajotTalim />
+      <TelegramLink />
       <MyWorks />
       <PortHeader />
       <Header />

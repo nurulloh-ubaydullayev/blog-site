@@ -55,8 +55,8 @@ function Blog() {
 
           <div className="blog-intro__datas">
             {data.slice(3, 4).map((row) => (
-              <Link className="blog__navlivk" to={"blogs/" + row.id}>
-                <li className="blog__intro-list" key={row.id}>
+              <li className="blog__intro-list" key={row.id}>
+                <Link className="blog__navlivk" to={"blogs/" + row.id}>
                   <h2 className="blog__intro-title">{row.title}</h2>
                   <p className="blog__intro-name">{row.name}</p>
                   <img
@@ -66,16 +66,16 @@ function Blog() {
                     width="325"
                   />
                   <p className="blog__tag">{row.tag}</p>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </div>
         </div>
         <div className="blog-intro__right">
           <div className="blog-intro__datas">
             {data.slice(5, 6).map((row) => (
-              <Link className="blog__navlivk" to={"blogs/" + row.id}>
-                <li className="blog__intro-list" key={row.id}>
+              <li className="blog__intro-list" key={row.name}>
+                <Link className="blog__navlivk" to={"blogs/" + row.id}>
                   <h2 className="blog__intro-title">{row.title}</h2>
                   <p className="blog__intro-name">{row.name}</p>
                   <img
@@ -85,8 +85,8 @@ function Blog() {
                     width="325"
                   />
                   <p className="blog__tag">{row.tag}</p>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </div>
           <a className="blog__more-animation" href="/">
@@ -102,8 +102,8 @@ function Blog() {
           </a>
           <div className="blog-intro__datas">
             {data.slice(5, 6).map((row) => (
-              <Link className="blog__navlivk" to={"blogs/" + row.id}>
-                <li className="blog__intro-list" key={row.id}>
+              <li className="blog__intro-list" key={row.id}>
+                <Link className="blog__navlivk" to={"blogs/" + row.id}>
                   <h2 className="blog__intro-title">{row.title}</h2>
                   <p className="blog__intro-name">{row.name}</p>
                   <img
@@ -113,8 +113,8 @@ function Blog() {
                     width="325"
                   />
                   <p className="blog__tag">{row.tag}</p>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </div>
         </div>
@@ -122,8 +122,8 @@ function Blog() {
         <div className="blog-intro__left">
           <div className="blog-intro__datas">
             {data.slice(3, 4).map((row) => (
-              <Link className="blog__navlivk" to={"blogs/" + row.id}>
-                <li className="blog__intro-list uncommon-list" key={row.id}>
+              <li className="blog__intro-list uncommon-list" key={row.name}>
+                <Link className="blog__navlivk" to={"blogs/" + row.id}>
                   <h2 className="blog__intro-title">{row.title}</h2>
                   <p className="blog__intro-name">{row.name}</p>
                   <img
@@ -133,8 +133,8 @@ function Blog() {
                     width="325"
                   />
                   <p className="blog__tag">{row.tag}</p>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </div>
           <h2 className="blog-intro__heading">Blog</h2>

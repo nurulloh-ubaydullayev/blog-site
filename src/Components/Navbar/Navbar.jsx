@@ -1,11 +1,10 @@
 import React from "react";
-import { NavLink, Switch, Route, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useRef } from "react";
 import "./Navbar.scss";
 function NavBar() {
   let location = useLocation();
   let routerEnd = location.pathname;
-  console.log(routerEnd);
   let homeActive = {
     textDecoration: "none",
   };

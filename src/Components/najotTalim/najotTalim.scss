@@ -8,9 +8,14 @@
   justify-content: center;
   align-items: center;
 }
+// .najotTalimLeftSiteWrapper {
+//   width: 473px;
+// }
+
 .najotTalimLeftSiteWrapper {
-  width: 473px;
+  width: auto;
 }
+
 .najotTalim2021 {
   display: flex;
   justify-content: space-between;
@@ -161,6 +166,7 @@
   .najotTalim2020 {
     margin-top: 0px;
     margin-bottom: 50px;
+    flex-direction: row-reverse;
   }
   .najotTalim2021left,
   .najotTalim2020Right {
@@ -211,5 +217,72 @@
     height: 54px;
     top: 90px;
     left: 37px;
+  }
+
+  .najotTalim2021 {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .najotTalimRightSite {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+  .downloadFile {
+    width: 248px;
+    height: 42px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .downloadFileType {
+    height: 42px;
+  }
+  .najotTalimRightSiteTitle {
+    font-size: 28px;
+    line-height: 30px;
+    width: 248px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .najotTalimRightSite {
+    margin-bottom: 0px;
+  }
+  .resumeWrapper {
+    width: 248px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .najotTalimComHr {
+    display: none;
+  }
+  .creator {
+    width: 248px;
+    height: 230px;
+  }
+  .najotTalim2020 {
+    flex-direction: column;
+    width: 248px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .najotTalim2021 {
+    flex-direction: column-reverse;
+    width: 248px;
+  }
+  .najotTalimImgWrapper {
+    width: 248px;
+  }
+  .najotTalimLogo {
+    width: 248px;
+    height: 250px;
+  }
+  .najotTalimMainLogo {
+    top: 100px;
+    left: 80px;
+  }
+  .najotContainer {
+    height: auto;
   }
 }
