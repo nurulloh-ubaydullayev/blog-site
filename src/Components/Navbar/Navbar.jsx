@@ -36,6 +36,8 @@ function NavBar() {
   }
   function noMenu() {
     btn.current.style.display = "none";
+    rotateMenu.current.style.transform = "rotate(0deg)";
+    rotateMenu.current.style.transition = "0.3s";
     a = true;
   }
   const isActive = {
@@ -113,7 +115,7 @@ function NavBar() {
           </li>
           <li className="navBarItem" onClick={noMenu}>
             <NavLink
-              to="/blog"
+              to="/blogs"
               className="navBarNavLink"
               activeStyle={isActive}
             >

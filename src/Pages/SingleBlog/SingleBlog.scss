@@ -347,3 +347,49 @@
 
 @media only screen and (max-width: 375px) {
 }
+
+.hashtag {
+  font-family: "Cera Pro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-top: 0px;
+}
+.hashtag:hover {
+  text-decoration-line: none;
+}
+.hashtag {
+  display: inline-block;
+  width: 50px;
+  position: relative;
+  color: #0087ca;
+  margin-bottom: 50px;
+  font-family: "Cera Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  // text-align: center;
+  text-decoration-line: underline;
+  color: #000000;
+  text-decoration: none;
+}
+.hashtag:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+}
+.hashtag:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: transform 0.6s ease-out;
+}
