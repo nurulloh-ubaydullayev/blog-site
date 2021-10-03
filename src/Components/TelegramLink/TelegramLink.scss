@@ -40,6 +40,9 @@
   }
 }
 @media (max-width: 500px) {
+  .telegramLink__container {
+    margin-bottom: 0;
+  }
   .link-header {
     font-size: 18px;
     line-height: 24px;

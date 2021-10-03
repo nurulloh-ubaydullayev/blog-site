@@ -17,13 +17,20 @@ function NavBar() {
 
   let a = true;
   const btn = useRef(null);
+  const rotateMenu = useRef(null);
   const navHidden = useRef(null);
   function menu() {
     if (a) {
       btn.current.style.display = "flex";
+      rotateMenu.current.style.transform = "rotate(180deg)";
+      rotateMenu.current.style.transition = "0.3s";
+
       a = false;
     } else {
       btn.current.style.display = "none";
+      rotateMenu.current.style.transform = "rotate(0deg)";
+      rotateMenu.current.style.transition = "0.3s";
+
       a = true;
     }
   }
@@ -85,7 +92,9 @@ function NavBar() {
       </nav>
       <nav className="mainNavBarWrapper2">
         <button className="menuWrapper" onClick={menu}>
-          <span className="rotateMenu">menu</span>
+          <span className="rotateMenu" ref={rotateMenu}>
+            menu
+          </span>
         </button>
         <ul className="navBarWrapper2" ref={btn}>
           <li className="navBarItem" onClick={noMenu}>

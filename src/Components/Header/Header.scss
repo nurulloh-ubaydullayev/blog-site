@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 870px) {
+  .header__list {
+    margin-top: 217px;
+  }
   .header__container {
     padding-left: 15px;
   }
@@ -108,6 +111,13 @@
 }
 
 @media (max-width: 549px) {
+  .about .header {
+    margin-bottom: 330px;
+  }
+
+  .about .header__item {
+    margin-bottom: 0;
+  }
   .loader_ {
     top: -120px;
     right: 4%;
