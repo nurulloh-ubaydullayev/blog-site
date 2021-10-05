@@ -1,6 +1,4 @@
 import "./App.scss";
-
-import $ from "jquery";
 import { Switch, Route } from "react-router-dom";
 // import data from "./Components/Data/Data";
 
@@ -15,9 +13,6 @@ import Navbar from "./Components/Navbar/Navbar";
 // Components
 
 function App() {
-  $(window).on("scroll", function () {
-    $(".App").css("bottom", $(window).scrollTop() * -5);
-  });
   return (
     <div className="app">
       <Navbar />

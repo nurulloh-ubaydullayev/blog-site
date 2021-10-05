@@ -12,11 +12,14 @@ import PostAvatar from "../../Assets/Images/post_avatar.png";
 
 function SingleBlog() {
   const history = useHistory();
+  React.useEffect(() => {
+    window.location.href = "#single-blog__top";
+  }, []);
 
   return (
     <div className="single-blog">
       <div className="container">
-        <div className="single-blog__top">
+        <div className="single-blog__top" id="single-blog__top">
           <button className="history-back" onClick={() => history.goBack("/")}>
             back
           </button>

@@ -11,6 +11,9 @@ import Footer from "../../Components/Footer/Footer";
 import TelegramLink from "../../Components/TelegramLink/TelegramLink";
 
 function About() {
+  React.useEffect(() => {
+    window.location.href = "#header";
+  }, []);
   return (
     <div className="about">
       <Footer />

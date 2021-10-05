@@ -11,6 +11,9 @@ import Footer from "../../Components/Footer/Footer";
 import BlogHeader from "../../Components/BlogHeader/BlogHeader";
 
 function Blog() {
+  React.useEffect(() => {
+    window.location.href = "#blog-header";
+  }, []);
   const data = [
     {
       id: 1,

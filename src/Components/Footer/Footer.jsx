@@ -3,7 +3,7 @@ import "./Footer.scss";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer__container">
         <div className="footer__loader"></div>
         <div className="footer__div">

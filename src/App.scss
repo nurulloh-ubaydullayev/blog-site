@@ -10,6 +10,74 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800;900&display=swap");
 
+/* eb-garamond-regular - latin */
+/* eb-garamond-regular - latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Assets/Fonts/eb-garamond-v15-latin-regular.woff2") format("woff2"),
+    url("./Assets/Fonts/eb-garamond-v15-latin-regular.woff") format("woff");
+}
+/* eb-garamond-500 - latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./Assets/Fonts/eb-garamond-v15-latin-500.woff2") format("woff2"),
+    url("./Assets/Fonts/eb-garamond-v15-latin-500.woff") format("woff");
+}
+/* eb-garamond-600 - latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./Assets/Fonts/eb-garamond-v15-latin-600.woff2") format("woff2"),
+    url("./Assets/Fonts/eb-garamond-v15-latin-600.woff") format("woff");
+}
+/* eb-garamond-700 - latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./Assets/Fonts/eb-garamond-v15-latin-700.woff2") format("woff2"),
+    url("./Assets/Fonts/eb-garamond-v15-latin-700.woff") format("woff");
+}
+/* eb-garamond-800 - latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./Assets/Fonts/eb-garamond-v15-latin-800.woff2") format("woff2"),
+    url("./Assets/Fonts/eb-garamond-v15-latin-800.woff") format("woff");
+}
+/* eb-garamond-500italic - latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 500;
+  src: url("./Assets/Fonts/eb-garamond-v15-latin-500italic.woff2")
+      format("woff2"),
+    url("./Assets/Fonts/eb-garamond-v15-latin-500italic.woff") format("woff");
+}
+/* eb-garamond-600italic - latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 600;
+  src: url("./Assets/Fonts/eb-garamond-v15-latin-600italic.woff2")
+      format("woff2"),
+    url("./Assets/Fonts/eb-garamond-v15-latin-600italic.woff") format("woff");
+}
+/* eb-garamond-700italic - latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./Assets/Fonts/eb-garamond-v15-latin-700italic.woff2")
+      format("woff2"),
+    url("./Assets/Fonts/eb-garamond-v15-latin-700italic.woff") format("woff");
+}
 html {
   height: 100%;
   box-sizing: border-box;
@@ -22,6 +90,11 @@ html {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #333;
+  color: #fff;
 }
 
 .visually-hidden {

@@ -4,7 +4,7 @@ import "./BlogHeader.scss";
 function BlogHeader() {
   return (
     <>
-      <div className="portHeader__container">
+      <div className="portHeader__container" id="blog-header">
         <div className="loader_ load"></div>
         <p className="blogHeader__p">
           New post every week follow and share with loved ones
