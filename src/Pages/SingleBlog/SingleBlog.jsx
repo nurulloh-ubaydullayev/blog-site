@@ -17,19 +17,27 @@ function SingleBlog() {
     const title = window.document.title;
     const url = window.document.URL;
 
-    if (navigator.share) {
-      navigator
-        .share({
-          title: `${title}`,
-          url: `${url}`,
-        })
-        .then(() => {
-          console.log("Thanks for sharing!");
-        })
-        .catch(console.error);
-    } else {
-      console.log("Ooops sorry you can not share link");
-    }
+    const telegramApi = `https://t.me/share/url?url=${url}$text=${title}`;
+
+    window.open(`${telegramApi}`, `${title}`);
+  }
+
+  function handleTwitterClick() {
+    const title = window.document.title;
+    const url = window.document.URL;
+
+    const telegramApi = `https://twitter.com/intent/tweet?tweet=${url}$text=${title}`;
+
+    window.open(`${telegramApi}`, `${title}`);
+  }
+
+  function handleFacebookClick() {
+    const title = window.document.title;
+    const url = window.document.URL;
+
+    const telegramApi = `https://www.facebook.com/sharer.php?u=${url}$text=${title}`;
+
+    window.open(`${telegramApi}`, `${title}`);
   }
 
   return (
@@ -155,12 +163,12 @@ function SingleBlog() {
                   instagram
                 </span>
               </li>
-              <li className="share__link-item">
+              <li className="share__link-item" onClick={handleFacebookClick}>
                 <span className="share__link facebook" href="/">
                   facebook
                 </span>
               </li>
-              <li className="share__link-item">
+              <li className="share__link-item" onClick={handleTwitterClick}>
                 <span className="share__link twitter" href="/">
                   twitter
                 </span>
