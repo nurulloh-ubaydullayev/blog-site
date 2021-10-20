@@ -1,6 +1,6 @@
 import "./SingleBlog.scss";
 import React from "react";
-import { Link, NavLink, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 // import data from "../../Components/Data/Data";
 // import CheckRow from "../../Components/CheckRow/CheckRow";
