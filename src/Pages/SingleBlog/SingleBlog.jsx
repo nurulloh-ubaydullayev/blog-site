@@ -17,7 +17,7 @@ function SingleBlog() {
     const title = window.document.title;
     const url = window.document.URL;
 
-    const telegramApi = `https://t.me/share/url?url=${url}$text=${title}`;
+    const telegramApi = `https://t.me/share/url?url=${url}`;
 
     window.open(`${telegramApi}`, `${title}`);
   }
@@ -26,7 +26,7 @@ function SingleBlog() {
     const title = window.document.title;
     const url = window.document.URL;
 
-    const telegramApi = `https://twitter.com/intent/tweet?tweet=${url}$text=${title}`;
+    const telegramApi = `https://twitter.com/intent/tweet?tweet=${url}`;
 
     window.open(`${telegramApi}`, `${title}`);
   }
@@ -35,7 +35,7 @@ function SingleBlog() {
     const title = window.document.title;
     const url = window.document.URL;
 
-    const telegramApi = `https://www.facebook.com/sharer.php?u=${url}$text=${title}`;
+    const telegramApi = `https://www.facebook.com/sharer.php?u=${url}`;
 
     window.open(`${telegramApi}`, `${title}`);
   }
