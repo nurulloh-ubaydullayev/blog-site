@@ -11,11 +11,18 @@ import Footer from "../../Components/Footer/Footer";
 import TelegramLink from "../../Components/TelegramLink/TelegramLink";
 
 function About() {
+  const fullPage = React.useRef(null);
+
   React.useEffect(() => {
-    window.location.href = "#header";
+    // window.scrollTo(0, document.body.scrollHeight);
+    // window.addEventListener("scroll", () => {
+    //   fullPage.current.style.bottom =
+    //     Math.round(window.pageYOffset) * -1 + "px";
+    // });
   }, []);
+
   return (
-    <div className="about">
+    <div className="about" ref={fullPage}>
       <Footer />
       <BlogIntro />
       <NajotTalim />

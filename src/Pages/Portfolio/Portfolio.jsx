@@ -7,9 +7,6 @@ import MyWorks from "../../Components/MyWorks/MyWorksPortfolio";
 import PortHeader from "../../Components/PortHeader/PortHeader";
 
 function Portfolio() {
-  React.useEffect(() => {
-    window.location.href = "#port-header";
-  }, []);
   return (
     <div className="portfolio">
       <Footer />

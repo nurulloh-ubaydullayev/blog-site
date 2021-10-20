@@ -8,7 +8,7 @@
   background-color: black;
   margin-right: auto;
   margin-left: auto;
-  transition: bottom 1s;
+  transition: bottom 0.5s;
 }
 .navBarWrapper {
   display: flex;
@@ -58,11 +58,15 @@
     display: none;
   }
   .mainNavBarWrapper2 {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    transition: top 1s;
     display: block;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    position: relative;
+    z-index: 777;
   }
   .menuWrapper {
     height: 50px;

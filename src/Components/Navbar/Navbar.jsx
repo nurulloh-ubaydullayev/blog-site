@@ -19,6 +19,7 @@ function NavBar() {
   const btn = useRef(null);
   const rotateMenu = useRef(null);
   const navHidden = useRef(null);
+  const navHidden2 = useRef(null);
   function menu() {
     if (a) {
       btn.current.style.display = "flex";
@@ -47,9 +48,11 @@ function NavBar() {
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos < currentScrollPos) {
-      navHidden.current.style.bottom = "0px";
+      navHidden.current.style.bottom = "60px";
+      navHidden2.current.style.top = "-260px";
     } else {
       navHidden.current.style.bottom = "-109px";
+      navHidden2.current.style.top = "0px";
     }
     prevScrollpos = currentScrollPos;
   };
@@ -92,7 +95,7 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-      <nav className="mainNavBarWrapper2">
+      <nav className="mainNavBarWrapper2" ref={navHidden2}>
         <button className="menuWrapper" onClick={menu}>
           <span className="rotateMenu" ref={rotateMenu}>
             menu
@@ -100,7 +103,7 @@ function NavBar() {
         </button>
         <ul className="navBarWrapper2" ref={btn}>
           <li className="navBarItem" onClick={noMenu}>
-            <NavLink to="/" className="navBarNavLink">
+            <NavLink to="/" className="navBarNavLink" activeStyle={homeActive}>
               About me
             </NavLink>
           </li>

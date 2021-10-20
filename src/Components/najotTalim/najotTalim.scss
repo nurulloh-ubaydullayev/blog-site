@@ -238,6 +238,7 @@
   }
   .downloadFileType {
     height: 42px;
+    width: 60px;
   }
   .najotTalimRightSiteTitle {
     font-size: 28px;
@@ -284,5 +285,12 @@
   }
   .najotContainer {
     height: auto;
+  }
+
+  .downloadFileName {
+    margin-left: auto;
+    // white-space: nowrap;
+    font-size: 12px;
+    line-height: 10px;
   }
 }

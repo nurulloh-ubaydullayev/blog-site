@@ -1,6 +1,6 @@
 import "./SingleBlog.scss";
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, NavLink, useHistory } from "react-router-dom";
 
 // import data from "../../Components/Data/Data";
 // import CheckRow from "../../Components/CheckRow/CheckRow";
@@ -12,9 +12,25 @@ import PostAvatar from "../../Assets/Images/post_avatar.png";
 
 function SingleBlog() {
   const history = useHistory();
-  React.useEffect(() => {
-    window.location.href = "#single-blog__top";
-  }, []);
+
+  function handleTelegramClick() {
+    const title = window.document.title;
+    const url = window.document.URL;
+
+    if (navigator.share) {
+      navigator
+        .share({
+          title: `${title}`,
+          url: `${url}`,
+        })
+        .then(() => {
+          console.log("Thanks for sharing!");
+        })
+        .catch(console.error);
+    } else {
+      console.log("Ooops sorry you can not share link");
+    }
+  }
 
   return (
     <div className="single-blog">
@@ -77,7 +93,7 @@ function SingleBlog() {
           </p>
 
           <img className="post__img" src={PostImg1} alt="was difficult" />
-          <Link className="post__img-alt" path="/difficult">
+          <Link className="post__img-alt" to="/difficult">
             was difficult
           </Link>
           <h3 className="post__mini-title">
@@ -126,25 +142,28 @@ function SingleBlog() {
             </h4>
 
             <ul className="share__links-list">
-              <li className="share__link-item first-share">
-                <a className="share__link telegram" href="/">
+              <li
+                className="share__link-item first-share"
+                onClick={handleTelegramClick}
+              >
+                <span className="share__link telegram" href="/">
                   telegram
-                </a>
+                </span>
               </li>
               <li className="share__link-item">
-                <a className="share__link instagram" href="/">
+                <span className="share__link instagram" href="/">
                   instagram
-                </a>
+                </span>
               </li>
               <li className="share__link-item">
-                <a className="share__link facebook" href="/">
+                <span className="share__link facebook" href="/">
                   facebook
-                </a>
+                </span>
               </li>
               <li className="share__link-item">
-                <a className="share__link twitter" href="/">
+                <span className="share__link twitter" href="/">
                   twitter
-                </a>
+                </span>
               </li>
             </ul>
           </div>
